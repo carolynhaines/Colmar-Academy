@@ -1,0 +1,45 @@
+/* Global Text Styles */
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: rgba(76, 84, 84, 1);
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  color: rgba(76, 84, 84, 1);
+}
+
+.overlay {
+  color: #ffffff;
+}
+
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+
+/* Nav Bar */
+.nav-bar {
+  height: 64px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-lockup img {
+  height:  32px;
+  width: auto;
+}
+
+.nav-menu a {
+  font-size: 0.875rem;
+  margin-left: 16px;
+  text-decoration: none;
+  color: rgba(76, 84, 84, 1);
+}

@@ -5,6 +5,11 @@ html {
   color: rgba(76, 84, 84, 1);
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-family: 'Roboto Slab', serif;
   font-weight: bold;
@@ -55,6 +60,15 @@ p {
 @media only screen and (max-width: 768px) {
   .container {
     width: 100%;
+    margin: auto;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    margin: auto;
   }
 }
 
@@ -92,6 +106,10 @@ i {
   align-items: center;
 }
 
+.nav-menu {
+  padding-right: 1rem;
+}
+
 .nav-menu a {
   font-size: 0.875rem;
   margin-left: 1rem;
@@ -102,6 +120,7 @@ i {
 .logo-desktop img {
   height:  2rem;
   width: auto;
+  padding-left: 1rem;
 }
 
 .mobile-nav img {
@@ -125,8 +144,10 @@ i {
     display: none;
   }
 
-  .nav-bar {
-    justify-content: space-around;
+  .mobile-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -152,6 +173,8 @@ i {
   align-items: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;s
 }
 
 .intro {
@@ -194,6 +217,8 @@ i {
   align-items: flex-start;
   padding-bottom: 4rem;
   padding-top: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .practice {
@@ -278,7 +303,7 @@ i {
 }
 
 .module {
-  width: 250px;
+  width: 30%;
   margin-bottom: 2rem;
 }
 
@@ -309,11 +334,12 @@ i {
   .modules-mobile {
     display: none;
   }
+
 }
 
 @media only screen and (max-width:768px) {
   .modules-mobile {
-    display-block;
+    display: block;
     width: 90%;
   }
 
@@ -330,6 +356,16 @@ i {
     text-align: center;
     padding: 1rem;
     margin-bottom: 1rem;
+    transition: background-color 0.25s ease-in 0s;
+  }
+
+  .modules-mobile li:hover {
+    background-color: rgba(234, 211, 83, 1);
+  }
+
+  .mobile-mod {
+    color: rgba(61, 73, 85, 1);
+    text-decoration: none;
   }
 
   .module-grid {
